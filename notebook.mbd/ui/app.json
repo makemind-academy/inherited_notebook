@@ -1,0 +1,72 @@
+{
+  "type": "application",
+  "title": "The notebook",
+  "version": "1.0.0",
+  "initialRoute": "/",
+  "routes": {
+    "/": "ui://pages/machine",
+    "/standing": "ui://pages/standing"
+  },
+  "theme": {
+    "mode": "light",
+    "color": {
+      "primary": "#8a6a2f",
+      "onPrimary": "#ffffff",
+      "primaryContainer": "#f1e6d0",
+      "onPrimaryContainer": "#3a2a08",
+      "surface": "#fffdf9",
+      "onSurface": "#1b1710",
+      "surfaceContainerHighest": "#f5f1e9",
+      "onSurfaceVariant": "#8b8272",
+      "outline": "#e9e0cf",
+      "outlineVariant": "#e9e0cf",
+      "error": "#b3261e",
+      "onError": "#ffffff",
+      "warning": "#a4620a",
+      "onWarning": "#ffffff",
+      "inverseSurface": "#1b1710",
+      "inverseOnSurface": "#fffdf9"
+    },
+    "spacing": {
+      "xxs": 2,
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "xl": 32,
+      "2xl": 48
+    },
+    "shape": {
+      "none": 0,
+      "extraSmall": 4,
+      "small": 8,
+      "medium": 12,
+      "large": 16,
+      "extraLarge": 28,
+      "full": 999
+    },
+    "fonts": {
+      "JetBrainsMono": {
+        "source": "asset",
+        "family": "JetBrainsMono"
+      }
+    }
+  },
+  "state": {
+    "initial": {
+      "rows": [],
+      "rowCount": 0,
+      "writers": "",
+      "span": "",
+      "supersededCount": 0,
+      "noOutcomeCount": 0,
+      "headline": "",
+      "bookRule": ""
+    }
+  },
+  "onInit": {
+    "type": "tool",
+    "tool": "notes.machine",
+    "params": {}
+  }
+}
